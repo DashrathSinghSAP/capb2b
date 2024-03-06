@@ -1,4 +1,4 @@
-@Rest service sampleservice2 {
+@rest service sampleservice2 {
 
    entity Foo {
     key id : Int64;

@@ -21,12 +21,6 @@
   "cds": {
     "cov2ap": {
       "plugin": true
-    },
-    "requires": {
-      "db": {
-         "kind": "sqlite",
-         "credentials": { "url": "db.sqlite" } 
-      }
-   }
+    }
   }
 }

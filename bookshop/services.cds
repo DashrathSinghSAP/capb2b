@@ -1,4 +1,4 @@
-using { cuid, managed } from '@sap/cds/common';
+using { cuid, managed, Country, sap.common.CodeList } from '@sap/cds/common';
 
 service bookShop {
 
@@ -8,6 +8,16 @@ service bookShop {
 
     entity Authors : cuid {
         name : String;
+        countryOfBirth: Country;
+    }
+
+    entity priority : CodeList {
+        key code : String enum {
+            High = 'H';
+            Midium = 'M';
+            Low = 'L';
+
+        }
     }
 
 }
